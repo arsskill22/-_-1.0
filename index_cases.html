@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <script src="C:\Users\grgrv\Desktop\Курсовая веб\site\com_show.js"></script>
+    <title>zolotoe!semechko_zakazi</title>
+</head>
+<body>
+    <div class="area">
+        <header>
+            <div class="logo"><img src="images/золотое_семечко_main.jpg" alt="logo" onclick="window.location.href='index.html'"></div>
+            <div class="find_it">
+                <div><h1 class="search_buy_name">Поиск покупок по почте заказа:</h1></div>
+                <div class="order_find_buttons">
+                    <div class="find_place">
+                        <label for="phone">Введите почту:</label>
+                        <input type="text" id="phone" name="phone" placeholder="exаmple@mail.com">
+                        <button onclick="searchOrders()">Найти</button>
+                    </div>
+                    <div class="check_place">
+                        <div id="codeVerification" style="display:none;">
+                            <label for="verificationCode">Введите код подтверждения:</label>
+                            <input type="text" id="verificationCode" name="verificationCode">
+                            <button onclick="verifyCode()">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+
+        <h2>Результаты поиска:</h2>
+        <div id="results"></div>
+    </div>
+</body>
+
+</html>
